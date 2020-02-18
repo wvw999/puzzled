@@ -1,7 +1,7 @@
 class PuzzlesController < ApplicationController
 
   def index
-    400.times do
+    #400.times do
       @builder = Builder.new
       @wordlist = @builder.initial_word_puller
       @board = Board.new
@@ -13,7 +13,7 @@ class PuzzlesController < ApplicationController
         end
         @counter += 1
       end
-    end
+    #end
     json_response(@complete)
   end
 
