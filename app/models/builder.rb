@@ -62,7 +62,7 @@ class Builder
       end
     end
 
-    return @complete_list.sort_by(&:length).reverse
+    return @complete_list.shuffle
   end
 
 end
